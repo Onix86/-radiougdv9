@@ -12,8 +12,7 @@ angular.module('app.radio', [])
     // Initial bandwidth check
     streamUrl = {
       hiFiMode: isHighBandwidth() ? true : false,
-      hiFi: stream.hiFi,
-      loFi: stream.loFi
+      hiFi: stream.hiFi
     };
 
     // Initialization
@@ -58,7 +57,7 @@ angular.module('app.radio', [])
   function play() {
     if((ionic.Platform.isIOS() && !vm.paused) || !AudioFactory.isRadio){
       //ui.showToast("Loading...", 0);
-      AudioFactory.init(streamUrl.hiFiMode ? streamUrl.hiFi : streamUrl.loFi);
+      AudioFactory.init(streamUrl.hiFiMode ? streamUrl.hiFi : streamUrl.hiFi);
       if(!AudioFactory.isRadio)
     	AudioFactory.stop();
     }
