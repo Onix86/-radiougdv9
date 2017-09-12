@@ -1,6 +1,6 @@
 angular.module('app.services', [])
 .factory('streamService', function($http, $q){
-    var metadataUrl = 'http://icecast.24hourkirtan.fm:8000/status-json.xsl';
+    var metadataUrl = 'http://70.38.73.27:8005/stream';
     var contentRegex = /<body>(.*)<\/body>/;
     var itunesSearchUrl = 'https://itunes.apple.com/search?term=';
     var resolutionRegex = /100x100/;
