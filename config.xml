@@ -9,7 +9,7 @@
   </author>
   <content src="index.html"/>
   <access origin="*"/>
-  <preference name="radio-only" value="false"/>
+  <preference name="radio-only" value="true"/>
 
   <preference name="AndroidLaunchMode" value="singleInstance"/>
   <preference name="exit-on-suspend" value="false"/>
